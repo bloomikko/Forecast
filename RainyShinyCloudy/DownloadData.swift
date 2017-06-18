@@ -19,6 +19,7 @@ class Download {
             let result = response.result
                     if let dict = result.value as? Dictionary<String, AnyObject> {
                         currentWeather.parseDataFrom(dict: dict)
+                        print(dict)
             }
             completed()
         }
@@ -28,7 +29,6 @@ class Download {
         let forecastURL = URL(string: FORECAST_WEATHER_URL)!
         Alamofire.request(forecastURL).responseJSON { response in
             let result = response.result
-            
             if let dict = result.value as? Dictionary<String, AnyObject> {
                 if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
                     for obj in list {

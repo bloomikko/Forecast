@@ -49,11 +49,8 @@ class CurrentWeather {
     }
     
     func parseDataFrom(dict: Dictionary<String, AnyObject>) {
-        print(dict)
             if let name = dict["name"] as? String {
                 self._cityName = name.capitalized
-                print("test: \(self._cityName)")
-
             }
             
             if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {

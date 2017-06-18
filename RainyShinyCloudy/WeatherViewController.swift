@@ -30,7 +30,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
         
         tableView.delegate = self
@@ -44,7 +44,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if CLLocationManager.authorizationStatus() != .notDetermined {
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
@@ -54,10 +53,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
                     self.tableView.reloadData()
                 }
             }
-            print(CURRENT_WEATHER_URL)
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
