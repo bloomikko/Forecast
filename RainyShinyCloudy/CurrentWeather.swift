@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class CurrentWeather {
     var _cityName: String!
@@ -49,31 +48,27 @@ class CurrentWeather {
         return _currentTemp
     }
     
-    func downloadWeatherDetails(completed: @escaping DownloadComplete) {
-        Alamofire.request(CURRENT_WEATHER_URL).responseJSON { response in
-            let result = response.result
-            if let dict = result.value as? Dictionary<String, AnyObject> {
-                
-                if let name = dict["name"] as? String {
-                    self._cityName = name.capitalized
+    func parseDataFrom(dict: Dictionary<String, AnyObject>) {
+        print(dict)
+            if let name = dict["name"] as? String {
+                self._cityName = name.capitalized
+                print("test: \(self._cityName)")
+
+            }
+            
+            if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
+                if let main = weather[0]["main"] as? String {
+                    self._weatherType = main.capitalized
                 }
-                
-                if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
-                    if let main = weather[0]["main"] as? String {
-                        self._weatherType = main.capitalized
-                    }
-                }
-                
-                if let main = dict["main"] as? Dictionary<String, AnyObject> {
-                    if let currentTemperature = main["temp"] as? Double {
-                        var kelvinToCelsius = currentTemperature - 273.15
-                        kelvinToCelsius.round()
-                        let intCurrent = Int(kelvinToCelsius)
-                        self._currentTemp = "\(intCurrent)°"
-                    }
+            }
+            
+            if let main = dict["main"] as? Dictionary<String, AnyObject> {
+                if let currentTemperature = main["temp"] as? Double {
+                    var kelvinToCelsius = currentTemperature - 273.15
+                    kelvinToCelsius.round()
+                    let intCurrent = Int(kelvinToCelsius)
+                    self._currentTemp = "\(intCurrent)°"
                 }
             }
         }
-        completed()
     }
-}

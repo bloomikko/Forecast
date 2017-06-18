@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class Forecast {
     
@@ -44,7 +43,7 @@ class Forecast {
         return _lowTemp
     }
     
-    init(weatherDict: Dictionary<String, AnyObject>) {
+    func parseDataFrom(weatherDict: Dictionary<String, AnyObject>) {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             if let min = temp["min"] as? Double {
                 var kelvinToCelsius = min - 273.15

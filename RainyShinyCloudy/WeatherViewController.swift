@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreLocation
-import Alamofire
 
 class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
@@ -24,7 +23,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var currentWeather: CurrentWeather!
     var forecast: Forecast!
-    var forecasts = [Forecast]()
+    var download: Download!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,40 +41,22 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        locationAuthStatus()
     }
     
-    func locationAuthStatus() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if CLLocationManager.authorizationStatus() != .notDetermined {
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-            currentWeather.downloadWeatherDetails {
-                self.downloadForecastData {
-                    self.updateMainUI()
-                }
-            }
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-            locationAuthStatus()
-        }
-    }
-
-    func downloadForecastData(completed: @escaping DownloadComplete) {
-        Alamofire.request(FORECAST_WEATHER_URL).responseJSON { response in
-            let result = response.result
-            
-            if let dict = result.value as? Dictionary<String, AnyObject> {
-                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
-                    for obj in list {
-                        let forecast = Forecast(weatherDict: obj)
-                        self.forecasts.append(forecast)
-                    }
-                    self.forecasts.remove(at: 0)
+            Download().downloadWeatherDetails {
+                self.updateMainUI()
+                Download().downloadForecastData {
                     self.tableView.reloadData()
                 }
             }
-            completed()
+            print(CURRENT_WEATHER_URL)
+        } else {
+            locationManager.requestWhenInUseAuthorization()
         }
     }
     
