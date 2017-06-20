@@ -21,7 +21,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation!
     
-    var currentWeather: CurrentWeather!
     var forecast: Forecast!
     var download: Download!
     
@@ -35,8 +34,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        currentWeather = CurrentWeather()
     }
     
     override func viewDidAppear(_ animated: Bool) {

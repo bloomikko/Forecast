@@ -19,7 +19,6 @@ class Download {
             let result = response.result
                     if let dict = result.value as? Dictionary<String, AnyObject> {
                         currentWeather.parseDataFrom(dict: dict)
-                        print(dict)
             }
             completed()
         }
