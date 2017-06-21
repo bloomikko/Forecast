@@ -16,6 +16,14 @@
 		524C4E1B1EEEF9F4004394B0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */; };
 		524C4E1F1EEF07D2004394B0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1E1EEF07D2004394B0 /* Location.swift */; };
 		528F31B81EEDA21B0061967A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F31B71EEDA21B0061967A /* Forecast.swift */; };
+		52EE75991EFAE41900550912 /* Blogger Sans-Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */; };
+		52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */; };
+		52EE759B1EFAE41900550912 /* Blogger Sans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */; };
+		52EE759C1EFAE41900550912 /* Blogger Sans-Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */; };
+		52EE759D1EFAE41900550912 /* Blogger Sans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */; };
+		52EE759E1EFAE41900550912 /* Blogger Sans-Medium Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */; };
+		52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */; };
+		52EE75A01EFAE41900550912 /* Blogger Sans.ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */; };
 		52F576BE1EED4A2600CD2785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BD1EED4A2600CD2785 /* Constants.swift */; };
 		52F576C01EED4C3D00CD2785 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */; };
 		EAD4ECC55B4AF4469AC80574 /* Pods_RainyShinyCloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494A35303641E06D37AB6B33 /* Pods_RainyShinyCloudy.framework */; };
@@ -36,6 +44,14 @@
 		524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		524C4E1E1EEF07D2004394B0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		528F31B71EEDA21B0061967A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold Italic.ttf"; sourceTree = "<group>"; };
+		52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
+		52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Italic.ttf"; sourceTree = "<group>"; };
+		52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light Italic.ttf"; sourceTree = "<group>"; };
+		52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light.ttf"; sourceTree = "<group>"; };
+		52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium Italic.ttf"; sourceTree = "<group>"; };
+		52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
+		52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf.ttf"; sourceTree = "<group>"; };
 		52F576BD1EED4A2600CD2785 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,12 +98,13 @@
 		523E5DAC1EE7135F00660C33 /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
-				523E5DAD1EE7135F00660C33 /* AppDelegate.swift */,
-				523E5DAF1EE7135F00660C33 /* WeatherViewController.swift */,
-				523E5DB11EE7135F00660C33 /* Main.storyboard */,
+				52EE75A11EFAE44100550912 /* Resources */,
 				523E5DB41EE7135F00660C33 /* Assets.xcassets */,
+				523E5DB11EE7135F00660C33 /* Main.storyboard */,
 				523E5DB61EE7135F00660C33 /* LaunchScreen.storyboard */,
 				523E5DB91EE7135F00660C33 /* Info.plist */,
+				523E5DAD1EE7135F00660C33 /* AppDelegate.swift */,
+				523E5DAF1EE7135F00660C33 /* WeatherViewController.swift */,
 				52F576BD1EED4A2600CD2785 /* Constants.swift */,
 				52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */,
 				528F31B71EEDA21B0061967A /* Forecast.swift */,
@@ -97,6 +114,21 @@
 			);
 			name = Forecast;
 			path = RainyShinyCloudy;
+			sourceTree = "<group>";
+		};
+		52EE75A11EFAE44100550912 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */,
+				52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */,
+				52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */,
+				52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */,
+				52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */,
+				52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */,
+				52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */,
+				52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BB1F0829EA4D7C0CD56F43FE /* Frameworks */ = {
@@ -170,9 +202,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */,
 				523E5DB81EE7135F00660C33 /* LaunchScreen.storyboard in Resources */,
 				523E5DB51EE7135F00660C33 /* Assets.xcassets in Resources */,
+				52EE759E1EFAE41900550912 /* Blogger Sans-Medium Italic.ttf in Resources */,
 				523E5DB31EE7135F00660C33 /* Main.storyboard in Resources */,
+				52EE759C1EFAE41900550912 /* Blogger Sans-Light Italic.ttf in Resources */,
+				52EE75991EFAE41900550912 /* Blogger Sans-Bold Italic.ttf in Resources */,
+				52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */,
+				52EE759D1EFAE41900550912 /* Blogger Sans-Light.ttf in Resources */,
+				52EE759B1EFAE41900550912 /* Blogger Sans-Italic.ttf in Resources */,
+				52EE75A01EFAE41900550912 /* Blogger Sans.ttf.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

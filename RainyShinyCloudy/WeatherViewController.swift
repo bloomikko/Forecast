@@ -1,6 +1,6 @@
 //
 //  WeatherViewController.swift
-//  RainyShinyCloudy
+//  Forecast
 //
 //  Created by Mikko Rouru on 6.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.

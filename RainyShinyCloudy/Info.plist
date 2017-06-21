@@ -50,5 +50,16 @@
 	<string>The app needs your location to prodide up-to-date information.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>The app needs your location to prodide up-to-date information.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Blogger Sans-Bold Italic.ttf</string>
+		<string>Blogger Sans-Bold.ttf</string>
+		<string>Blogger Sans-Italic.ttf</string>
+		<string>Blogger Sans-Light Italic.ttf</string>
+		<string>Blogger Sans-Light.ttf</string>
+		<string>Blogger Sans-Medium Italic.ttf</string>
+		<string>Blogger Sans-Medium.ttf</string>
+		<string>Blogger Sans.ttf.ttf</string>
+	</array>
 </dict>
 </plist>

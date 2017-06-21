@@ -1,12 +1,13 @@
 //
 //  CurrentWeather.swift
-//  RainyShinyCloudy
+//  Forecast
 //
 //  Created by Mikko Rouru on 11.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
 class CurrentWeather {
     var _cityName: String!
@@ -60,11 +61,8 @@ class CurrentWeather {
             }
             
             if let main = dict["main"] as? Dictionary<String, AnyObject> {
-                if let currentTemperature = main["temp"] as? Double {
-                    var kelvinToCelsius = currentTemperature - 273.15
-                    kelvinToCelsius.round()
-                    let intCurrent = Int(kelvinToCelsius)
-                    self._currentTemp = "\(intCurrent)°"
+                if let currentTemperature = main["temp"] as? Int {
+                    self._currentTemp = String("\(currentTemperature)°")
                 }
             }
         }

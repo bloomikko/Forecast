@@ -1,12 +1,13 @@
 //
 //  Forecast.swift
-//  RainyShinyCloudy
+//  Forecast
 //
 //  Created by Mikko Rouru on 11.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
 class Forecast {
     
@@ -45,18 +46,12 @@ class Forecast {
     
     func parseDataFrom(weatherDict: Dictionary<String, AnyObject>) {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
-            if let min = temp["min"] as? Double {
-                var kelvinToCelsius = min - 273.15
-                kelvinToCelsius.round()
-                let intLow = Int(kelvinToCelsius)
-                self._lowTemp = "\(intLow)°"
+            if let min = temp["min"] as? Int {
+                self._lowTemp = String("\(min)°")
             }
             
-            if let max = temp["max"] as? Double {
-                var kelvinToCelsius = max - 273.15
-                kelvinToCelsius.round()
-                let intMax = Int(kelvinToCelsius)
-                self._highTemp = "\(intMax)°"
+            if let max = temp["max"] as? Int {
+                self._highTemp = String("\(max)°")
             }
         }
         
@@ -80,7 +75,9 @@ class Forecast {
 extension Date {
     func dayOfTheWeek() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE"
+        let locale = Locale(identifier: "en")
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = "EEEE dd.M."
         return dateFormatter.string(from: self)
     }
 }
