@@ -44,12 +44,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-            Download().downloadWeatherDetails {
-                self.updateMainUI()
-                Download().downloadForecastData {
-                    self.tableView.reloadData()
-                }
-            }
+            updateData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,6 +62,28 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
             return cell
         } else {
             return WeatherCell()
+        }
+    }
+    
+    @IBAction func unitButtonPressed(_ sender: Any) {
+        if (CURRENT_WEATHER_URL == CURRENT_CELSIUS_URL) {
+            CURRENT_WEATHER_URL = CURRENT_FAHRENHEIT_URL
+            FORECAST_WEATHER_URL = FORECAST_FAHRENHEIT_URL
+            currentUnit = fahrenheit
+        } else {
+            CURRENT_WEATHER_URL = CURRENT_CELSIUS_URL
+            FORECAST_WEATHER_URL = FORECAST_CELSIUS_URL
+            currentUnit = celsius
+        }
+        updateData()
+    }
+    
+    func updateData() {
+        Download().downloadWeatherDetails {
+            self.updateMainUI()
+            Download().downloadForecastData {
+                self.tableView.reloadData()
+            }
         }
     }
     

@@ -47,11 +47,11 @@ class Forecast {
     func parseDataFrom(weatherDict: Dictionary<String, AnyObject>) {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             if let min = temp["min"] as? Int {
-                self._lowTemp = String("\(min)°")
+                self._lowTemp = String("\(min)\(currentUnit)")
             }
             
             if let max = temp["max"] as? Int {
-                self._highTemp = String("\(max)°")
+                self._highTemp = String("\(max)\(currentUnit)")
             }
         }
         
@@ -77,7 +77,7 @@ extension Date {
         let dateFormatter = DateFormatter()
         let locale = Locale(identifier: "en")
         dateFormatter.locale = locale
-        dateFormatter.dateFormat = "EEEE dd.M."
+        dateFormatter.dateFormat = "EEEE d.M."
         return dateFormatter.string(from: self)
     }
 }

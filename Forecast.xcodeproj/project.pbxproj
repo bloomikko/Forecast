@@ -16,23 +16,19 @@
 		524C4E1B1EEEF9F4004394B0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */; };
 		524C4E1F1EEF07D2004394B0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1E1EEF07D2004394B0 /* Location.swift */; };
 		528F31B81EEDA21B0061967A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F31B71EEDA21B0061967A /* Forecast.swift */; };
-		52EE75991EFAE41900550912 /* Blogger Sans-Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */; };
+		5294DB4B1EFFF49600E443A2 /* Mochary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5294DB4A1EFFF49600E443A2 /* Mochary.ttf */; };
 		52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */; };
-		52EE759B1EFAE41900550912 /* Blogger Sans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */; };
-		52EE759C1EFAE41900550912 /* Blogger Sans-Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */; };
-		52EE759D1EFAE41900550912 /* Blogger Sans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */; };
-		52EE759E1EFAE41900550912 /* Blogger Sans-Medium Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */; };
 		52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */; };
-		52EE75A01EFAE41900550912 /* Blogger Sans.ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */; };
+		52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf */; };
 		52F576BE1EED4A2600CD2785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BD1EED4A2600CD2785 /* Constants.swift */; };
 		52F576C01EED4C3D00CD2785 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */; };
-		EAD4ECC55B4AF4469AC80574 /* Pods_RainyShinyCloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494A35303641E06D37AB6B33 /* Pods_RainyShinyCloudy.framework */; };
+		CE2A0F11464EE1A598C1B8CD /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083453AE4189911603898281 /* Pods_Forecast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B11342B5D2EAFDE345FA8EE /* Pods-RainyShinyCloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.release.xcconfig"; sourceTree = "<group>"; };
-		3D8F7EEF085F167B88E6515A /* Pods-RainyShinyCloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.debug.xcconfig"; sourceTree = "<group>"; };
-		494A35303641E06D37AB6B33 /* Pods_RainyShinyCloudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyShinyCloudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		083453AE4189911603898281 /* Pods_Forecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		102DFCCE914ED11B95A71AB3 /* Pods-Forecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.release.xcconfig"; sourceTree = "<group>"; };
+		24740279B617990B241EEEA5 /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
 		52045E5F1EF1AA38004626DD /* DownloadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadData.swift; sourceTree = "<group>"; };
 		523E5DAA1EE7135F00660C33 /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523E5DAD1EE7135F00660C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,14 +40,10 @@
 		524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		524C4E1E1EEF07D2004394B0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		528F31B71EEDA21B0061967A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
-		52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold Italic.ttf"; sourceTree = "<group>"; };
+		5294DB4A1EFFF49600E443A2 /* Mochary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mochary.ttf; path = ../../../../Downloads/mochary/Mochary.ttf; sourceTree = "<group>"; };
 		52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
-		52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Italic.ttf"; sourceTree = "<group>"; };
-		52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light Italic.ttf"; sourceTree = "<group>"; };
-		52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light.ttf"; sourceTree = "<group>"; };
-		52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium Italic.ttf"; sourceTree = "<group>"; };
 		52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
-		52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf.ttf"; sourceTree = "<group>"; };
+		52EE75981EFAE41900550912 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf"; sourceTree = "<group>"; };
 		52F576BD1EED4A2600CD2785 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,29 +53,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD4ECC55B4AF4469AC80574 /* Pods_RainyShinyCloudy.framework in Frameworks */,
+				CE2A0F11464EE1A598C1B8CD /* Pods_Forecast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49C94D3EADAFF1FFC9321377 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3D8F7EEF085F167B88E6515A /* Pods-RainyShinyCloudy.debug.xcconfig */,
-				2B11342B5D2EAFDE345FA8EE /* Pods-RainyShinyCloudy.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		523E5DA11EE7135F00660C33 = {
 			isa = PBXGroup;
 			children = (
 				523E5DAC1EE7135F00660C33 /* Forecast */,
 				523E5DAB1EE7135F00660C33 /* Products */,
-				49C94D3EADAFF1FFC9321377 /* Pods */,
-				BB1F0829EA4D7C0CD56F43FE /* Frameworks */,
+				BC9E564DF81B2EFA23CF42B2 /* Pods */,
+				C41EAF2CEB0C487DE286C232 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,29 +95,33 @@
 				524C4E1E1EEF07D2004394B0 /* Location.swift */,
 				52045E5F1EF1AA38004626DD /* DownloadData.swift */,
 			);
-			name = Forecast;
-			path = RainyShinyCloudy;
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		52EE75A11EFAE44100550912 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				52EE75911EFAE41900550912 /* Blogger Sans-Bold Italic.ttf */,
 				52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */,
-				52EE75931EFAE41900550912 /* Blogger Sans-Italic.ttf */,
-				52EE75941EFAE41900550912 /* Blogger Sans-Light Italic.ttf */,
-				52EE75951EFAE41900550912 /* Blogger Sans-Light.ttf */,
-				52EE75961EFAE41900550912 /* Blogger Sans-Medium Italic.ttf */,
 				52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */,
-				52EE75981EFAE41900550912 /* Blogger Sans.ttf.ttf */,
+				52EE75981EFAE41900550912 /* Blogger Sans.ttf */,
+				5294DB4A1EFFF49600E443A2 /* Mochary.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		BB1F0829EA4D7C0CD56F43FE /* Frameworks */ = {
+		BC9E564DF81B2EFA23CF42B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				494A35303641E06D37AB6B33 /* Pods_RainyShinyCloudy.framework */,
+				24740279B617990B241EEEA5 /* Pods-Forecast.debug.xcconfig */,
+				102DFCCE914ED11B95A71AB3 /* Pods-Forecast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C41EAF2CEB0C487DE286C232 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083453AE4189911603898281 /* Pods_Forecast.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,12 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 523E5DBC1EE7135F00660C33 /* Build configuration list for PBXNativeTarget "Forecast" */;
 			buildPhases = (
-				8B5F633A1E22B2CB15BF786F /* [CP] Check Pods Manifest.lock */,
+				7A9902806E8D4FFAC5713110 /* [CP] Check Pods Manifest.lock */,
 				523E5DA61EE7135F00660C33 /* Sources */,
 				523E5DA71EE7135F00660C33 /* Frameworks */,
 				523E5DA81EE7135F00660C33 /* Resources */,
-				0E8BCCF051145B09418C95D1 /* [CP] Embed Pods Frameworks */,
-				53571FF5DDF41210AF1A65AC /* [CP] Copy Pods Resources */,
+				8137CADFD178D27DE2B2F2DD /* [CP] Embed Pods Frameworks */,
+				5CC856B364FC9229A759CDEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,36 +192,17 @@
 				52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */,
 				523E5DB81EE7135F00660C33 /* LaunchScreen.storyboard in Resources */,
 				523E5DB51EE7135F00660C33 /* Assets.xcassets in Resources */,
-				52EE759E1EFAE41900550912 /* Blogger Sans-Medium Italic.ttf in Resources */,
 				523E5DB31EE7135F00660C33 /* Main.storyboard in Resources */,
-				52EE759C1EFAE41900550912 /* Blogger Sans-Light Italic.ttf in Resources */,
-				52EE75991EFAE41900550912 /* Blogger Sans-Bold Italic.ttf in Resources */,
+				5294DB4B1EFFF49600E443A2 /* Mochary.ttf in Resources */,
 				52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */,
-				52EE759D1EFAE41900550912 /* Blogger Sans-Light.ttf in Resources */,
-				52EE759B1EFAE41900550912 /* Blogger Sans-Italic.ttf in Resources */,
-				52EE75A01EFAE41900550912 /* Blogger Sans.ttf.ttf in Resources */,
+				52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E8BCCF051145B09418C95D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53571FF5DDF41210AF1A65AC /* [CP] Copy Pods Resources */ = {
+		5CC856B364FC9229A759CDEC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,10 +214,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B5F633A1E22B2CB15BF786F /* [CP] Check Pods Manifest.lock */ = {
+		7A9902806E8D4FFAC5713110 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,6 +230,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8137CADFD178D27DE2B2F2DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,14 +384,16 @@
 		};
 		523E5DBD1EE7135F00660C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D8F7EEF085F167B88E6515A /* Pods-RainyShinyCloudy.debug.xcconfig */;
+			baseConfigurationReference = 24740279B617990B241EEEA5 /* Pods-Forecast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3XTWW3558T;
-				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
+				INFOPLIST_FILE = Forecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.projekti.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -416,14 +401,16 @@
 		};
 		523E5DBE1EE7135F00660C33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B11342B5D2EAFDE345FA8EE /* Pods-RainyShinyCloudy.release.xcconfig */;
+			baseConfigurationReference = 102DFCCE914ED11B95A71AB3 /* Pods-Forecast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3XTWW3558T;
-				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
+				INFOPLIST_FILE = Forecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.projekti.Forecast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

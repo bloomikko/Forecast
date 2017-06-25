@@ -35,10 +35,11 @@ class Download {
                         forecast.parseDataFrom(weatherDict: obj)
                         forecasts.append(forecast)
                     }
-                forecasts.remove(at: 0)
+                    forecasts.remove(at: 0)
                 }
             }
             completed()
         }
+     forecasts.removeAll()
     }
 }

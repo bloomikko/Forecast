@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 use_frameworks!
 
-target 'RainyShinyCloudy' do
+target 'Forecast' do
 
   pod 'Alamofire', 
   :git=> 'git@github.com:Alamofire/Alamofire.git'

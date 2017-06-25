@@ -7,9 +7,9 @@
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
-		<key>Pods-RainyShinyCloudy.xcscheme</key>
+		<key>Pods-Forecast.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11E589BFAD56C971E55C1C7FC7895500</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>F73D5761EAE45323D76424B91110AA52</key>
 		<dict>
 			<key>primary</key>
 			<true/>

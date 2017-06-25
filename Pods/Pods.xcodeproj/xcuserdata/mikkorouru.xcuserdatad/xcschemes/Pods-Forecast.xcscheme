@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11E589BFAD56C971E55C1C7FC7895500"
-               BuildableName = "Pods_RainyShinyCloudy.framework"
-               BlueprintName = "Pods-RainyShinyCloudy"
+               BlueprintIdentifier = "F73D5761EAE45323D76424B91110AA52"
+               BuildableName = "Pods_Forecast.framework"
+               BlueprintName = "Pods-Forecast"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11E589BFAD56C971E55C1C7FC7895500"
-            BuildableName = "Pods_RainyShinyCloudy.framework"
-            BlueprintName = "Pods-RainyShinyCloudy"
+            BlueprintIdentifier = "F73D5761EAE45323D76424B91110AA52"
+            BuildableName = "Pods_Forecast.framework"
+            BlueprintName = "Pods-Forecast"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

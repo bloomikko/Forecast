@@ -30,6 +30,8 @@ class CurrentWeather {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
+        let locale = Locale(identifier: "en")
+        dateFormatter.locale = locale
         let currentDate = dateFormatter.string(from: Date())
         self._date = "Today, \(currentDate)"
         return _date
@@ -62,7 +64,7 @@ class CurrentWeather {
             
             if let main = dict["main"] as? Dictionary<String, AnyObject> {
                 if let currentTemperature = main["temp"] as? Int {
-                    self._currentTemp = String("\(currentTemperature)°")
+                    self._currentTemp = String("\(currentTemperature)\(currentUnit)")
                 }
             }
         }
