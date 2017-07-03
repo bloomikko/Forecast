@@ -28,9 +28,9 @@
 		<true/>
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app needs your location to prodide up-to-date information.</string>
+	<string>The app needs permission for your location to provide up-to-date information.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The app needs your location to provide up-to-date information.</string>
+	<string>The app needs permission for your location to provide up-to-date information.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Blogger Sans-Bold.ttf</string>
@@ -49,13 +49,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

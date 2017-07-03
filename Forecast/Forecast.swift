@@ -1,8 +1,6 @@
 //
 //  Forecast.swift
 //  Forecast
-//
-//  Created by Mikko Rouru on 11.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.
 //
 
@@ -44,6 +42,7 @@ class Forecast {
         return _lowTemp
     }
     
+//Parse data from json file
     func parseDataFrom(weatherDict: Dictionary<String, AnyObject>) {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             if let min = temp["min"] as? Int {

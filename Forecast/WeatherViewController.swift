@@ -1,8 +1,6 @@
 //
 //  WeatherViewController.swift
 //  Forecast
-//
-//  Created by Mikko Rouru on 6.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.
 //
 
@@ -23,7 +21,8 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var forecast: Forecast!
     var download: Download!
-    
+ 
+//Location services, asks for user permission to use GPS
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,7 +45,8 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
             updateData()
     }
-    
+ 
+//Table view configuration
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -65,6 +65,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+//Button for switching between celsius and fahrenheit
     @IBAction func unitButtonPressed(_ sender: Any) {
         if (CURRENT_WEATHER_URL == CURRENT_CELSIUS_URL) {
             CURRENT_WEATHER_URL = CURRENT_FAHRENHEIT_URL
@@ -78,6 +79,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         updateData()
     }
     
+//Data updates
     func updateData() {
         Download().downloadWeatherDetails {
             self.updateMainUI()

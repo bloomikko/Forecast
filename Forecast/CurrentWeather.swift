@@ -1,8 +1,6 @@
 //
 //  CurrentWeather.swift
 //  Forecast
-//
-//  Created by Mikko Rouru on 11.6.2017.
 //  Copyright © 2017 Mikko Rouru. All rights reserved.
 //
 
@@ -10,6 +8,7 @@ import UIKit
 import Foundation
 
 class CurrentWeather {
+    
     var _cityName: String!
     var _date: String!
     var _weatherType: String!
@@ -51,21 +50,22 @@ class CurrentWeather {
         return _currentTemp
     }
     
+//Parse data from json file
     func parseDataFrom(dict: Dictionary<String, AnyObject>) {
-            if let name = dict["name"] as? String {
-                self._cityName = name.capitalized
-            }
+        if let name = dict["name"] as? String {
+            self._cityName = name.capitalized
+        }
             
-            if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
-                if let main = weather[0]["main"] as? String {
-                    self._weatherType = main.capitalized
-                }
+        if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
+            if let main = weather[0]["main"] as? String {
+                self._weatherType = main.capitalized
             }
+        }
             
-            if let main = dict["main"] as? Dictionary<String, AnyObject> {
-                if let currentTemperature = main["temp"] as? Int {
-                    self._currentTemp = String("\(currentTemperature)\(currentUnit)")
-                }
+        if let main = dict["main"] as? Dictionary<String, AnyObject> {
+            if let currentTemperature = main["temp"] as? Int {
+                self._currentTemp = String("\(currentTemperature)\(currentUnit)")
             }
         }
     }
+}
