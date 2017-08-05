@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
         <array key="Blogger Sans-Bold.ttf">
             <string>BloggerSans-Bold</string>
         </array>
@@ -29,14 +33,14 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3u-S1-SJT">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3u-S1-SJT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ7-ef-lJS">
+                                    <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ7-ef-lJS">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="XIW-hc-I7C"/>
@@ -50,7 +54,7 @@
                                             <navigationItem title="Forecast" id="Q4C-Gu-4Yi">
                                                 <barButtonItem key="rightBarButtonItem" style="plain" id="res-EU-EhP">
                                                     <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LNJ-QG-nMO">
-                                                        <rect key="frame" x="276" y="29" width="83" height="30"/>
+                                                        <rect key="frame" x="299" y="29" width="60" height="29"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.22617979160000001" green="0.66729928930000004" blue="0.89554251269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
@@ -129,15 +133,17 @@
                                     <constraint firstItem="TQ7-ef-lJS" firstAttribute="top" secondItem="q3u-S1-SJT" secondAttribute="top" id="wgJ-O5-Zgt"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sEN-Av-42c" userLabel="TableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="sEN-Av-42c" userLabel="TableView">
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" red="0.22617979160000001" green="0.66729928930000004" blue="0.89554251269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="E6z-85-Lu8" userLabel="weatherCell" customClass="WeatherCell" customModule="Forecast" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="E6z-85-Lu8" id="KC6-8L-tid">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7H1-yP-wTq">
@@ -174,7 +180,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exC-Pu-39j">
-                                                                            <rect key="frame" x="8" y="4" width="77.5" height="42.5"/>
+                                                                            <rect key="frame" x="8" y="4" width="78" height="42.5"/>
                                                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
@@ -237,7 +243,8 @@
                                                 <constraint firstItem="YPN-Qv-h67" firstAttribute="leading" secondItem="7H1-yP-wTq" secondAttribute="trailing" constant="8" id="tL4-o5-PVV"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.80488127710000001" green="0.80488127710000001" blue="0.80488127710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="dayLabel" destination="tlq-pj-JDL" id="UYN-zC-ChV"/>
@@ -258,16 +265,19 @@
                             <constraint firstItem="q3u-S1-SJT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XOM-6y-wC3"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZcZ-pi-P4q"/>
                             <constraint firstAttribute="trailing" secondItem="q3u-S1-SJT" secondAttribute="trailing" id="tI2-pN-5MX"/>
+                            <constraint firstItem="sEN-Av-42c" firstAttribute="top" secondItem="q3u-S1-SJT" secondAttribute="bottom" id="xDr-Ju-dJ9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sEN-Av-42c" secondAttribute="bottom" id="zxr-9e-Alg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentTempLabel" destination="gnc-eq-zyZ" id="ZpT-Dg-FvK"/>
+                        <outlet property="currentView" destination="q3u-S1-SJT" id="oip-Do-Cxz"/>
                         <outlet property="currentWeatherImage" destination="a0G-kf-nQT" id="TsT-ZX-kRi"/>
                         <outlet property="currentWeatherTypeLabel" destination="G6V-Cd-lgX" id="mZz-Lr-fxm"/>
                         <outlet property="dateLabel" destination="awn-qt-D0o" id="pFk-34-G4G"/>
                         <outlet property="locationLabel" destination="tPx-GF-Nhp" id="Wbf-Rk-o48"/>
                         <outlet property="tableView" destination="sEN-Av-42c" id="Ace-al-PiB"/>
+                        <outlet property="unitButton" destination="LNJ-QG-nMO" id="eGq-je-Orc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
