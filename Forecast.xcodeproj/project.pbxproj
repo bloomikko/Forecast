@@ -17,6 +17,7 @@
 		524C4E1B1EEEF9F4004394B0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */; };
 		524C4E1F1EEF07D2004394B0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1E1EEF07D2004394B0 /* Location.swift */; };
 		528F31B81EEDA21B0061967A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F31B71EEDA21B0061967A /* Forecast.swift */; };
+		52DA58B61F3742B900D81727 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA58B51F3742B900D81727 /* Connectivity.swift */; };
 		52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */; };
 		52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */; };
 		52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf */; };
@@ -41,6 +42,7 @@
 		524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		524C4E1E1EEF07D2004394B0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		528F31B71EEDA21B0061967A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		52DA58B51F3742B900D81727 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
 		52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
 		52EE75981EFAE41900550912 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				528F31B71EEDA21B0061967A /* Forecast.swift */,
 				524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */,
 				524C4E1E1EEF07D2004394B0 /* Location.swift */,
+				52DA58B51F3742B900D81727 /* Connectivity.swift */,
 				52045E5F1EF1AA38004626DD /* DownloadData.swift */,
 			);
 			path = Forecast;
@@ -243,12 +246,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Forecast/Pods-Forecast-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,6 +265,7 @@
 			files = (
 				523E5DB01EE7135F00660C33 /* WeatherViewController.swift in Sources */,
 				523E5DAE1EE7135F00660C33 /* AppDelegate.swift in Sources */,
+				52DA58B61F3742B900D81727 /* Connectivity.swift in Sources */,
 				524C4E1B1EEEF9F4004394B0 /* WeatherCell.swift in Sources */,
 				52F576C01EED4C3D00CD2785 /* CurrentWeather.swift in Sources */,
 				52F576BE1EED4A2600CD2785 /* Constants.swift in Sources */,

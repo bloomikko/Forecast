@@ -1,10 +1,8 @@
 PODS:
   - Alamofire (4.5.0)
-  - DGElasticPullToRefresh (1.1)
 
 DEPENDENCIES:
   - Alamofire (from `git@github.com:Alamofire/Alamofire.git`)
-  - DGElasticPullToRefresh
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -17,8 +15,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2983f0804e7566e66b937f5e7ef4aeba7b910426
-  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
 
-PODFILE CHECKSUM: b56f98a83c767b06d87171f5a28e22bf5bce9808
+PODFILE CHECKSUM: c1f438d706b1123a783ab3e665dd69f43bc87332
 
 COCOAPODS: 1.3.0

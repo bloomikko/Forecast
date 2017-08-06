@@ -154,19 +154,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="YPN-Qv-h67">
-                                                    <rect key="frame" x="74" y="-21" width="293" height="105"/>
+                                                    <rect key="frame" x="74" y="-21" width="293" height="128"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vr3-79-O81">
-                                                            <rect key="frame" x="0.0" y="0.0" width="7.5" height="105"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="7.5" height="128"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlq-pj-JDL">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="7.5" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="7.5" height="73"/>
                                                                     <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="17"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-9s-mNG">
-                                                                    <rect key="frame" x="0.0" y="55" width="7.5" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="78" width="7.5" height="50"/>
                                                                     <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -174,10 +174,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-uK-nBo">
-                                                            <rect key="frame" x="199" y="0.0" width="94" height="105"/>
+                                                            <rect key="frame" x="199" y="0.0" width="94" height="128"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fm-CS-pKw">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="73"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exC-Pu-39j">
                                                                             <rect key="frame" x="8" y="4" width="78" height="42.5"/>
@@ -201,7 +201,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-Cf-tXa">
-                                                                    <rect key="frame" x="0.0" y="55" width="94" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="78" width="94" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zew-wV-Vq4">
                                                                             <rect key="frame" x="8" y="4" width="78" height="42"/>
@@ -256,14 +256,62 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdh-eX-Jsa" userLabel="errorView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="1Sv-XK-GbI">
+                                        <rect key="frame" x="141" y="193" width="92" height="92"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check your Internet connection. Unable to fetch data." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-nE-yF1">
+                                        <rect key="frame" x="32" y="293" width="311" height="81"/>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-Pw-tuN">
+                                        <rect key="frame" x="138" y="382" width="98" height="29"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="98" id="QAY-m0-MIk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
+                                        <state key="normal" title="Try again">
+                                            <color key="titleColor" red="0.22745098039215686" green="0.66666666666666663" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tryAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aR-Yn-Ja4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.66666666666666663" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Xxe-nE-yF1" firstAttribute="leading" secondItem="sdh-eX-Jsa" secondAttribute="leading" constant="32" id="C4q-m0-uIy"/>
+                                    <constraint firstItem="9Bo-Pw-tuN" firstAttribute="top" secondItem="Xxe-nE-yF1" secondAttribute="bottom" constant="8" id="M0h-Ic-Vhk"/>
+                                    <constraint firstItem="1Sv-XK-GbI" firstAttribute="centerX" secondItem="Xxe-nE-yF1" secondAttribute="centerX" id="UNy-D5-Ypg"/>
+                                    <constraint firstItem="Xxe-nE-yF1" firstAttribute="centerY" secondItem="sdh-eX-Jsa" secondAttribute="centerY" id="gAd-Re-ry2"/>
+                                    <constraint firstItem="9Bo-Pw-tuN" firstAttribute="centerX" secondItem="Xxe-nE-yF1" secondAttribute="centerX" id="hVs-eP-IaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xxe-nE-yF1" secondAttribute="trailing" constant="32" id="jZ8-06-2gw"/>
+                                    <constraint firstItem="Xxe-nE-yF1" firstAttribute="centerX" secondItem="sdh-eX-Jsa" secondAttribute="centerX" id="pSx-wk-eZJ"/>
+                                    <constraint firstItem="Xxe-nE-yF1" firstAttribute="top" secondItem="1Sv-XK-GbI" secondAttribute="bottom" constant="8" id="un2-nj-aD0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sdh-eX-Jsa" secondAttribute="bottom" id="Cyz-um-cHK"/>
                             <constraint firstAttribute="trailing" secondItem="sEN-Av-42c" secondAttribute="trailing" id="GJz-16-KVL"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="top" secondItem="q3u-S1-SJT" secondAttribute="bottom" id="Meb-OH-7jF"/>
+                            <constraint firstItem="sdh-eX-Jsa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TJx-7V-CfB"/>
                             <constraint firstItem="q3u-S1-SJT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TKZ-cY-FYt"/>
                             <constraint firstItem="q3u-S1-SJT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XOM-6y-wC3"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZcZ-pi-P4q"/>
+                            <constraint firstItem="sdh-eX-Jsa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aIT-Hp-wqV"/>
+                            <constraint firstAttribute="trailing" secondItem="sdh-eX-Jsa" secondAttribute="trailing" id="jHX-zO-O1l"/>
                             <constraint firstAttribute="trailing" secondItem="q3u-S1-SJT" secondAttribute="trailing" id="tI2-pN-5MX"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="top" secondItem="q3u-S1-SJT" secondAttribute="bottom" id="xDr-Ju-dJ9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sEN-Av-42c" secondAttribute="bottom" id="zxr-9e-Alg"/>
@@ -271,10 +319,11 @@
                     </view>
                     <connections>
                         <outlet property="currentTempLabel" destination="gnc-eq-zyZ" id="ZpT-Dg-FvK"/>
-                        <outlet property="currentView" destination="q3u-S1-SJT" id="oip-Do-Cxz"/>
                         <outlet property="currentWeatherImage" destination="a0G-kf-nQT" id="TsT-ZX-kRi"/>
                         <outlet property="currentWeatherTypeLabel" destination="G6V-Cd-lgX" id="mZz-Lr-fxm"/>
                         <outlet property="dateLabel" destination="awn-qt-D0o" id="pFk-34-G4G"/>
+                        <outlet property="errorLabel" destination="Xxe-nE-yF1" id="CvT-os-mu0"/>
+                        <outlet property="errorView" destination="sdh-eX-Jsa" id="RCc-gf-JRd"/>
                         <outlet property="locationLabel" destination="tPx-GF-Nhp" id="Wbf-Rk-o48"/>
                         <outlet property="tableView" destination="sEN-Av-42c" id="Ace-al-PiB"/>
                         <outlet property="unitButton" destination="LNJ-QG-nMO" id="eGq-je-Orc"/>
@@ -285,4 +334,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rain" width="92" height="92"/>
+    </resources>
 </document>

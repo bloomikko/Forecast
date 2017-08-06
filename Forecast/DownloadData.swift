@@ -22,6 +22,7 @@ class Download {
             completed()
         }
     }
+
     
     func downloadForecastData(completed: @escaping DownloadComplete) {
         let forecastURL = URL(string: FORECAST_WEATHER_URL)!
