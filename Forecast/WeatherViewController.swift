@@ -18,6 +18,8 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var unitButton: UIButton!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var tryAgainButton: UIButton!
     
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation!
@@ -25,7 +27,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     var forecast: Forecast!
     
     var refresher: UIRefreshControl!
-    var dateFormatter: DateFormatter!
     
 //Location services, asks for user's permission to use GPS for weather data
     override func viewDidLoad() {
@@ -33,38 +34,44 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startMonitoringSignificantLocationChanges()
-        
+        locationManager.requestWhenInUseAuthorization()
         tableView.delegate = self
         tableView.dataSource = self
         
-        dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .short
-        let locale = Locale(identifier: "en")
-        dateFormatter.locale = locale
         refresher = UIRefreshControl()
         refresher.tintColor = UIColor.white
         refresher.addTarget(self, action: #selector(self.updateData), for: .valueChanged)
         tableView.refreshControl = refresher
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+            errorView.isHidden = true
+        } else {
+            errorView.isHidden = false
+            errorLabel.text = NSLocalizedString("Location services are required for using the app. Enable them in Settings app.", comment: "")
+        }
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            currentLocation = locationManager.location
-            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
-            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+        currentLocation = locationManager.location
+        Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+        Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+        
         if Connectivity.isConnectedToInternet() {
             updateData()
         } else {
             errorView.isHidden = false
+            errorLabel.text = NSLocalizedString("Check your Internet connection. Unable to fetch data.", comment: "")
+            tryAgainButton.isHidden = false
         }
     }
- 
+    
 //Table view configuration
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -76,8 +83,10 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
-            let forecast = forecasts[indexPath.row]
-            cell.configureCell(forecast: forecast)
+            if !self.refresher.isRefreshing && forecasts.count > 0 {
+                let forecast = forecasts[indexPath.row]
+                cell.configureCell(forecast: forecast)
+            }
             return cell
         } else {
             return WeatherCell()
@@ -86,18 +95,20 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
 //Button action for switching between celsius and fahrenheit
     @IBAction func unitButtonPressed(_ sender: Any) {
-        if (CURRENT_WEATHER_URL == CURRENT_CELSIUS_URL) {
-            CURRENT_WEATHER_URL = CURRENT_FAHRENHEIT_URL
-            FORECAST_WEATHER_URL = FORECAST_FAHRENHEIT_URL
-            currentUnit = fahrenheit
-        } else {
-            CURRENT_WEATHER_URL = CURRENT_CELSIUS_URL
-            FORECAST_WEATHER_URL = FORECAST_CELSIUS_URL
-            currentUnit = celsius
+        if !self.refresher.isRefreshing {
+            if (CURRENT_WEATHER_URL == CURRENT_CELSIUS_URL) {
+                CURRENT_WEATHER_URL = CURRENT_FAHRENHEIT_URL
+                FORECAST_WEATHER_URL = FORECAST_FAHRENHEIT_URL
+                currentUnit = fahrenheit
+            } else {
+                CURRENT_WEATHER_URL = CURRENT_CELSIUS_URL
+                FORECAST_WEATHER_URL = FORECAST_CELSIUS_URL
+                currentUnit = celsius
+            }
+            let toastMessage = baseToastMessage + " " + currentUnit
+            showUnitToast(message: toastMessage)
+            updateData()
         }
-        let toastMessage = baseToastMessage + currentUnit
-        showUnitToast(message: toastMessage)
-        updateData()
     }
     
 //Button for trying again connecting to Internet
@@ -108,10 +119,10 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         } else {
             let animation = CABasicAnimation(keyPath: "position")
             animation.duration = 0.07
-            animation.repeatCount = 4
+            animation.repeatCount = 2
             animation.autoreverses = true
-//            animation.fromValue = NSValue(CGPoint: CGPointMake(errorLabel.center.x - 10, errorLabel.center.y))
-//            animation.toValue = NSValue(CGPoint: CGPointMake(errorLabel.center.x + 10, errorLabel.center.y))
+            animation.fromValue = NSValue(cgPoint: CGPoint(x: errorLabel.center.x - 10, y: errorLabel.center.y))
+            animation.toValue = NSValue(cgPoint: CGPoint(x: errorLabel.center.x + 10, y: errorLabel.center.y))
             errorLabel.layer.add(animation, forKey: "position")
         }
     }
@@ -140,17 +151,19 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
 //Data and UI updates
     func updateData() {
+        locationManager.startUpdatingLocation()
+        self.refresher.endRefreshing()
         Download().downloadWeatherDetails {
             self.updateCurrentWeather()
             Download().downloadForecastData {
                 self.tableView.reloadData()
             }
         }
-        self.refresher.endRefreshing()
-        let now = Date()
-        let updateString = "Last update at " + self.dateFormatter.string(from: now)
+        forecasts.removeAll()
+        let updateString = NSLocalizedString("Updating...", comment: "")
         let attributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Blogger Sans", size: 13.0)]
         self.refresher.attributedTitle = NSAttributedString(string: updateString, attributes: attributes)
+        locationManager.stopUpdatingLocation()
     }
     
     func updateCurrentWeather() {
@@ -158,6 +171,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         currentTempLabel.text = "\(currentWeather.currentTemp)"
         currentWeatherTypeLabel.text = currentWeather.weatherType
         locationLabel.text = currentWeather.cityName
-        currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
+        currentWeatherImage.image = UIImage(named: currentWeather.weatherTypeForIcon)
     }
 }

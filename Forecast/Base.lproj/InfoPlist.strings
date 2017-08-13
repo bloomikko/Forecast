@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Forecast
+
+  Created by Mikko Rouru on 9.8.2017.
+  Copyright © 2017 Mikko Rouru. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "The app needs permission for your location to provide up-to-date information.";

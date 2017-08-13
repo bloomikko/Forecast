@@ -27,8 +27,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app needs permission for your location to provide up-to-date information.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app needs permission for your location to provide up-to-date information.</string>
 	<key>UIAppFonts</key>

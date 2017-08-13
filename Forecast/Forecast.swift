@@ -11,6 +11,7 @@ class Forecast {
     
     var _date: String!
     var _weatherType: String!
+    var _weatherTypeForIcon: String!
     var _highTemp: String!
     var _lowTemp: String!
     
@@ -26,6 +27,13 @@ class Forecast {
             _weatherType = ""
         }
         return _weatherType
+    }
+    
+    var weatherTypeForIcon: String {
+        if _weatherTypeForIcon == nil {
+            _weatherTypeForIcon = ""
+        }
+        return _weatherTypeForIcon
     }
     
     var highTemp: String {
@@ -56,16 +64,13 @@ class Forecast {
         
         if let weather = weatherDict ["weather"] as? [Dictionary<String, AnyObject>] {
             if let main = weather[0]["main"] as? String {
-                self._weatherType = main
+                self._weatherTypeForIcon = main
+                self._weatherType = NSLocalizedString(main, comment: "")
             }
         }
         
         if let date = weatherDict["dt"] as? Double {
             let unixConvertedDate = Date(timeIntervalSince1970: date)
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .full
-            dateFormatter.dateFormat = "EEEE"
-            dateFormatter.timeStyle = .none
             self._date = unixConvertedDate.dayOfTheWeek()
         }
     }
@@ -74,9 +79,14 @@ class Forecast {
 extension Date {
     func dayOfTheWeek() -> String {
         let dateFormatter = DateFormatter()
-        let locale = Locale(identifier: "en")
-        dateFormatter.locale = locale
-        dateFormatter.dateFormat = "EEEE d.M."
+        if let locale = NSLocale.current.languageCode {
+            if locale == "fi" {
+                dateFormatter.locale = Locale(identifier: locale)
+            } else {
+                dateFormatter.locale = Locale(identifier: "en_US")
+            }
+        }
+        dateFormatter.dateFormat = "cccc d.M."
         return dateFormatter.string(from: self)
     }
 }

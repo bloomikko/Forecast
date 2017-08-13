@@ -24,7 +24,7 @@ let FORECAST_CELSIUS_URL = "\(FORECAST_BASE_URL)\(LATITUDE)\(Location.sharedInst
 let FORECAST_FAHRENHEIT_URL = "\(FORECAST_BASE_URL)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(UNIT_FAHRENHEIT)\(FORECAST_EXTRA)\(APP_ID)\(API_KEY)"
 var FORECAST_WEATHER_URL = "\(FORECAST_BASE_URL)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(UNIT_CELSIUS)\(FORECAST_EXTRA)\(APP_ID)\(API_KEY)"
 
-let baseToastMessage = "Switched unit to "
+let baseToastMessage = NSLocalizedString("Switched unit to", comment: "")
 let celsius = "°C"
 let fahrenheit = "°F"
 var currentUnit = "°C"

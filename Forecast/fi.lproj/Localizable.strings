@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Forecast
+
+  Created by Mikko Rouru on 9.8.2017.
+  Copyright © 2017 Mikko Rouru. All rights reserved.
+*/
+
+"Clear" = "Selkeää";
+"Rain" = "Sateista";
+"Mist" = "Sumuista";
+"Cloudy" = "Pilvistä";
+"Clouds" = "Pilvistä";
+"Snow" = "Lumisadetta";
+"Haze" = "Sumuista";
+"Thunderstorm" = "Ukkosta";
+"Check your Internet connection. Unable to fetch data." = "Tarkista Internet-yhteytesi. Säätietoja ei voida hakea.";
+"Location services are required for using the app. Enable them in Settings app." = "Paikannuspalvelut tarvitaan säätietojen hakemiseen. Voit sallia ne Asetukset-sovelluksessa.";
+"Today" = "Tänään";
+"Switched unit to" = "Vaihdettu yksikköön";
+"Updating..." = "Päivitetään...";

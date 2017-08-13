@@ -12,6 +12,7 @@ class CurrentWeather {
     var _cityName: String!
     var _date: String!
     var _weatherType: String!
+    var _weatherTypeForIcon: String!
     var _currentTemp: String!
     
     var cityName: String {
@@ -29,10 +30,15 @@ class CurrentWeather {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
-        let locale = Locale(identifier: "en")
-        dateFormatter.locale = locale
+        if let locale = NSLocale.current.languageCode {
+            if locale == "fi" {
+                dateFormatter.locale = Locale(identifier: locale)
+            } else {
+                dateFormatter.locale = Locale(identifier: "en_US")
+            }
+        }
         let currentDate = dateFormatter.string(from: Date())
-        self._date = "Today, \(currentDate)"
+        self._date = NSLocalizedString("Today", comment: "") + ", " + currentDate
         return _date
     }
     
@@ -41,6 +47,13 @@ class CurrentWeather {
             _weatherType = ""
         }
         return _weatherType
+    }
+    
+    var weatherTypeForIcon: String {
+        if _weatherTypeForIcon == nil {
+            _weatherTypeForIcon = ""
+        }
+        return _weatherTypeForIcon
     }
     
     var currentTemp: String {
@@ -58,7 +71,8 @@ class CurrentWeather {
             
         if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
             if let main = weather[0]["main"] as? String {
-                self._weatherType = main.capitalized
+                self._weatherTypeForIcon = main
+                self._weatherType = NSLocalizedString(main, comment: "")
             }
         }
             

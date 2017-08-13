@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Forecast
+
+  Created by Mikko Rouru on 9.8.2017.
+  Copyright © 2017 Mikko Rouru. All rights reserved.
+*/
+
+"Clear" = "Clear";
+"Rain" = "Rain";
+"Mist" = "Mist";
+"Cloudy" = "Cloudy";
+"Clouds" = "Clouds";
+"Snow" = "Snow";
+"Haze" = "Haze";
+"Thunderstorm" = "Thunderstorm";
+"Check your Internet connection. Unable to fetch data." = "Check your Internet connection. Unable to fetch data.";
+"Location services are required for using the app. Enable them in Settings app." = "Location services are required for using the app. Enable them in Settings app.";
+"Today" = "Today";
+"Switched unit to" = "Switched unit to";
+"Updating..." = "Updating...";

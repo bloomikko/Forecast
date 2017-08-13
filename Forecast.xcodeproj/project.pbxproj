@@ -21,6 +21,8 @@
 		52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */; };
 		52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */; };
 		52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf */; };
+		52F53B001F3B74B0004CDB13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52F53AFE1F3B74B0004CDB13 /* Localizable.strings */; };
+		52F53B041F3B763F004CDB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52F53B021F3B763F004CDB13 /* InfoPlist.strings */; };
 		52F576BE1EED4A2600CD2785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BD1EED4A2600CD2785 /* Constants.swift */; };
 		52F576C01EED4C3D00CD2785 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */; };
 		CE2A0F11464EE1A598C1B8CD /* Pods_Forecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083453AE4189911603898281 /* Pods_Forecast.framework */; };
@@ -46,6 +48,12 @@
 		52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
 		52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
 		52EE75981EFAE41900550912 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf"; sourceTree = "<group>"; };
+		52F53AFC1F3B7466004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Main.strings; sourceTree = "<group>"; };
+		52F53AFD1F3B7467004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		52F53AFF1F3B74B0004CDB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		52F53B011F3B74CD004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		52F53B031F3B763F004CDB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52F53B051F3B7644004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52F576BD1EED4A2600CD2785 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52F576BF1EED4C3D00CD2785 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +105,8 @@
 				524C4E1E1EEF07D2004394B0 /* Location.swift */,
 				52DA58B51F3742B900D81727 /* Connectivity.swift */,
 				52045E5F1EF1AA38004626DD /* DownloadData.swift */,
+				52F53AFE1F3B74B0004CDB13 /* Localizable.strings */,
+				52F53B021F3B763F004CDB13 /* InfoPlist.strings */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";
@@ -176,6 +186,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fi,
 			);
 			mainGroup = 523E5DA11EE7135F00660C33;
 			productRefGroup = 523E5DAB1EE7135F00660C33 /* Products */;
@@ -197,7 +208,9 @@
 				5244D82D1F0AA1530050EAA9 /* Mochary.ttf in Resources */,
 				523E5DB51EE7135F00660C33 /* Assets.xcassets in Resources */,
 				523E5DB31EE7135F00660C33 /* Main.storyboard in Resources */,
+				52F53B001F3B74B0004CDB13 /* Localizable.strings in Resources */,
 				52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */,
+				52F53B041F3B763F004CDB13 /* InfoPlist.strings in Resources */,
 				52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +295,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				523E5DB21EE7135F00660C33 /* Base */,
+				52F53AFC1F3B7466004CDB13 /* fi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -290,8 +304,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				523E5DB71EE7135F00660C33 /* Base */,
+				52F53AFD1F3B7467004CDB13 /* fi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52F53AFE1F3B74B0004CDB13 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F53AFF1F3B74B0004CDB13 /* Base */,
+				52F53B011F3B74CD004CDB13 /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		52F53B021F3B763F004CDB13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F53B031F3B763F004CDB13 /* Base */,
+				52F53B051F3B7644004CDB13 /* fi */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -301,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -352,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
