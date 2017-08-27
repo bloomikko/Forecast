@@ -13,14 +13,14 @@
 		523E5DB31EE7135F00660C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523E5DB11EE7135F00660C33 /* Main.storyboard */; };
 		523E5DB51EE7135F00660C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523E5DB41EE7135F00660C33 /* Assets.xcassets */; };
 		523E5DB81EE7135F00660C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523E5DB61EE7135F00660C33 /* LaunchScreen.storyboard */; };
-		5244D82D1F0AA1530050EAA9 /* Mochary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5244D82C1F0AA1530050EAA9 /* Mochary.ttf */; };
 		524C4E1B1EEEF9F4004394B0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */; };
 		524C4E1F1EEF07D2004394B0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C4E1E1EEF07D2004394B0 /* Location.swift */; };
 		528F31B81EEDA21B0061967A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F31B71EEDA21B0061967A /* Forecast.swift */; };
+		52C163E81F52C6F100BF8257 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52C163E51F52C6F100BF8257 /* Blogger Sans-Bold.ttf */; };
+		52C163E91F52C6F100BF8257 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52C163E61F52C6F100BF8257 /* Blogger Sans-Medium.ttf */; };
+		52C163EA1F52C6F100BF8257 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52C163E71F52C6F100BF8257 /* Blogger Sans.ttf */; };
+		52C163EC1F52C73400BF8257 /* Mochary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52C163EB1F52C73400BF8257 /* Mochary.ttf */; };
 		52DA58B61F3742B900D81727 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA58B51F3742B900D81727 /* Connectivity.swift */; };
-		52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */; };
-		52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */; };
-		52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52EE75981EFAE41900550912 /* Blogger Sans.ttf */; };
 		52F53B001F3B74B0004CDB13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52F53AFE1F3B74B0004CDB13 /* Localizable.strings */; };
 		52F53B041F3B763F004CDB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52F53B021F3B763F004CDB13 /* InfoPlist.strings */; };
 		52F576BE1EED4A2600CD2785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F576BD1EED4A2600CD2785 /* Constants.swift */; };
@@ -40,14 +40,14 @@
 		523E5DB41EE7135F00660C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523E5DB71EE7135F00660C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523E5DB91EE7135F00660C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5244D82C1F0AA1530050EAA9 /* Mochary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mochary.ttf; path = ../../../../Library/Fonts/Mochary.ttf; sourceTree = "<group>"; };
 		524C4E1A1EEEF9F4004394B0 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		524C4E1E1EEF07D2004394B0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		528F31B71EEDA21B0061967A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		52C163E51F52C6F100BF8257 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold.ttf"; path = "Resources/Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
+		52C163E61F52C6F100BF8257 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Medium.ttf"; path = "Resources/Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
+		52C163E71F52C6F100BF8257 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans.ttf"; path = "Resources/Blogger Sans.ttf"; sourceTree = "<group>"; };
+		52C163EB1F52C73400BF8257 /* Mochary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mochary.ttf; path = Resources/Mochary.ttf; sourceTree = "<group>"; };
 		52DA58B51F3742B900D81727 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
-		52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
-		52EE75981EFAE41900550912 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf"; sourceTree = "<group>"; };
 		52F53AFC1F3B7466004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Main.strings; sourceTree = "<group>"; };
 		52F53AFD1F3B7467004CDB13 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		52F53AFF1F3B74B0004CDB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -114,10 +114,10 @@
 		52C174C61F00049900985A9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				52EE75921EFAE41900550912 /* Blogger Sans-Bold.ttf */,
-				52EE75971EFAE41900550912 /* Blogger Sans-Medium.ttf */,
-				52EE75981EFAE41900550912 /* Blogger Sans.ttf */,
-				5244D82C1F0AA1530050EAA9 /* Mochary.ttf */,
+				52C163E51F52C6F100BF8257 /* Blogger Sans-Bold.ttf */,
+				52C163E61F52C6F100BF8257 /* Blogger Sans-Medium.ttf */,
+				52C163E71F52C6F100BF8257 /* Blogger Sans.ttf */,
+				52C163EB1F52C73400BF8257 /* Mochary.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -203,15 +203,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52EE759F1EFAE41900550912 /* Blogger Sans-Medium.ttf in Resources */,
 				523E5DB81EE7135F00660C33 /* LaunchScreen.storyboard in Resources */,
-				5244D82D1F0AA1530050EAA9 /* Mochary.ttf in Resources */,
+				52C163EA1F52C6F100BF8257 /* Blogger Sans.ttf in Resources */,
 				523E5DB51EE7135F00660C33 /* Assets.xcassets in Resources */,
+				52C163E91F52C6F100BF8257 /* Blogger Sans-Medium.ttf in Resources */,
+				52C163E81F52C6F100BF8257 /* Blogger Sans-Bold.ttf in Resources */,
+				52C163EC1F52C73400BF8257 /* Mochary.ttf in Resources */,
 				523E5DB31EE7135F00660C33 /* Main.storyboard in Resources */,
 				52F53B001F3B74B0004CDB13 /* Localizable.strings in Resources */,
-				52EE759A1EFAE41900550912 /* Blogger Sans-Bold.ttf in Resources */,
 				52F53B041F3B763F004CDB13 /* InfoPlist.strings in Resources */,
-				52EE75A01EFAE41900550912 /* Blogger Sans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
