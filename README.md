@@ -1,6 +1,7 @@
 ![Image of Forecast app icon](https://github.com/mrouru/Forecast/blob/master/Forecast/Resources/Forecast_Icon.png)
 # Forecast
 iOS (iPhone) app for showing current weather and forecast based on user's current location. Created by following Mark Price's iOS 10/Swift 3 course on Udemy, but added some own features and redesigned UI. Uses OpenWeatherMap for weather information. Feel free to comment or suggest new features!
+
 Icon by Niklas Mäkelä.
 
 # Features
