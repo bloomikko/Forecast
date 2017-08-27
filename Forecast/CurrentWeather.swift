@@ -30,7 +30,7 @@ class CurrentWeather {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
-        if let locale = NSLocale.current.languageCode {
+        if let locale = Locale.current.languageCode {
             if locale == "fi" {
                 dateFormatter.locale = Locale(identifier: locale)
             } else {

@@ -18,7 +18,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var unitButton: UIButton!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var tryAgainButton: UIButton!
     
     let locationManager = CLLocationManager()
@@ -34,6 +33,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 200
         locationManager.requestWhenInUseAuthorization()
         tableView.delegate = self
         tableView.dataSource = self
@@ -151,7 +151,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
 //Data and UI updates
     func updateData() {
-        locationManager.startUpdatingLocation()
+        forecasts.removeAll()
         self.refresher.endRefreshing()
         Download().downloadWeatherDetails {
             self.updateCurrentWeather()
@@ -159,7 +159,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
                 self.tableView.reloadData()
             }
         }
-        forecasts.removeAll()
         let updateString = NSLocalizedString("Updating...", comment: "")
         let attributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Blogger Sans", size: 13.0)]
         self.refresher.attributedTitle = NSAttributedString(string: updateString, attributes: attributes)

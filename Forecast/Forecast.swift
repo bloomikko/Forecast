@@ -79,7 +79,7 @@ class Forecast {
 extension Date {
     func dayOfTheWeek() -> String {
         let dateFormatter = DateFormatter()
-        if let locale = NSLocale.current.languageCode {
+        if let locale = Locale.current.languageCode {
             if locale == "fi" {
                 dateFormatter.locale = Locale(identifier: locale)
             } else {
