@@ -8,4 +8,5 @@ iOS (iPhone) app for showing current weather and forecast based on user's curren
   - Celsius/Fahrenheit switch
   - Pull to refresh
   - FI/EN localization
+  
 ![Image of Forecast promo](https://github.com/mrouru/Forecast/blob/master/Forecast/Resources/Forecast_Promo.png)
