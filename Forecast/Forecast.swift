@@ -52,13 +52,14 @@ class Forecast {
     
 //Parse data from json file
     func parseDataFrom(weatherDict: Dictionary<String, AnyObject>) {
+        
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
-            if let min = temp["min"] as? Int {
-                self._lowTemp = String("\(min)\(currentUnit)")
+            if let min = temp["min"] as? Float {
+                self._lowTemp = String("\(Int(min))\(currentUnit)")
             }
             
-            if let max = temp["max"] as? Int {
-                self._highTemp = String("\(max)\(currentUnit)")
+            if let max = temp["max"] as? Float {
+                self._highTemp = String("\(Int(max))\(currentUnit)")
             }
         }
         
