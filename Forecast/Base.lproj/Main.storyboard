@@ -47,7 +47,7 @@
                                             <navigationItem title="Forecast" id="Q4C-Gu-4Yi">
                                                 <barButtonItem key="rightBarButtonItem" width="4" style="plain" id="res-EU-EhP">
                                                     <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LNJ-QG-nMO">
-                                                        <rect key="frame" x="259" y="6" width="45" height="32"/>
+                                                        <rect key="frame" x="262" y="6" width="42" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.22617979160000001" green="0.66729928930000004" blue="0.89554251269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="17"/>
@@ -300,7 +300,7 @@
                             <constraint firstAttribute="bottom" secondItem="sEN-Av-42c" secondAttribute="bottom" id="Fxh-dK-g6a"/>
                             <constraint firstItem="ygp-9M-G4A" firstAttribute="trailing" secondItem="sEN-Av-42c" secondAttribute="trailing" id="GJz-16-KVL"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="top" secondItem="q3u-S1-SJT" secondAttribute="bottom" id="Meb-OH-7jF"/>
-                            <constraint firstItem="sdh-eX-Jsa" firstAttribute="top" secondItem="ygp-9M-G4A" secondAttribute="top" constant="-20" id="TJx-7V-CfB"/>
+                            <constraint firstItem="sdh-eX-Jsa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TJx-7V-CfB"/>
                             <constraint firstItem="q3u-S1-SJT" firstAttribute="leading" secondItem="ygp-9M-G4A" secondAttribute="leading" id="TKZ-cY-FYt"/>
                             <constraint firstItem="q3u-S1-SJT" firstAttribute="top" secondItem="ygp-9M-G4A" secondAttribute="top" id="XOM-6y-wC3"/>
                             <constraint firstItem="sEN-Av-42c" firstAttribute="leading" secondItem="ygp-9M-G4A" secondAttribute="leading" id="ZcZ-pi-P4q"/>
