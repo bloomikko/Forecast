@@ -11,4 +11,16 @@ Icon by Niklas Mäkelä.
   - Pull to refresh
   - FI/EN localization
   
+  # What did I do/learn?
+  - Stack views
+  - UITableView
+  - Custom cells
+  - Location services
+  - Error handling for Internet
+  - Localization
+  - JSON requests with Alamofire
+  - Pods
+  - Refresh functions
+  - UI design
+
 ![Image of Forecast promo](https://github.com/mrouru/Forecast/blob/master/Forecast/Resources/Forecast_Promo.png)
