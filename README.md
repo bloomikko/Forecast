@@ -4,14 +4,14 @@ iOS (iPhone) app for showing current weather and forecast based on user's curren
 
 Icon by Niklas Mäkelä.
 
-# Features
+## Features
   - Current weather based on location
   - 9-day forecast
   - Celsius/Fahrenheit switch
   - Pull to refresh
   - FI/EN localization
   
-  # What did I do/learn?
+## What did I do/learn?
   - Stack views
   - UITableView
   - Custom cells
